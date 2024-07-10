@@ -1,0 +1,61 @@
+* pwd -- print working directory
+			> displays your current directory location.
+
+* mkdir -- make directory
+			> creates a new folder in the current directory
+
+* cd -- change directory
+			> allows you to move throughout your computer
+
+* ls > displays the list of contents of the current directory
+
+* touch > creates a new file in the current directory 
+
+* rm > deleting/removing a file 
+
+---------------
+
+*	Repository -- like a folder/container that stores files/folders related to a project. It keeps track of the changes made over time.
+		> Local Repository -- version of the repo that is stored on your own computer
+		> Remote Repository -- version of the repo that is stored on a server or cloud-based platform [GitHub]
+
+*	git init
+		- initialize a folder
+
+* 	git config --global user.name "<username>"
+	git config --global user.email "<email address>"
+		- sets the user's username and email address
+
+*	git config --global user.name 
+	git config --global user.email 
+		- to check if username and email address were successfully connected
+
+*	git status 
+		- displays the current status of your file/folder
+
+*	git add . 
+		- adds all modified files in your current directory to the staging area	
+
+*	git add "filename" 
+		- adds a specific file to the staging area
+
+* 	git commit -m "message"
+		- saves the changes that you've made to the files in the staging area to the repository. The "message" describes what changes were made in this commit. 
+
+*	git log
+		- displays all the commits that were made
+
+*	git log --oneline
+		- condensed version of git log
+
+*	git push 
+		- uploading files/folders from local repo to remote repo
+
+*	git pull 
+		- retrieving changes from a remote repo and merges them into your local repo
+
+* 	git clone 
+		- creating a copy of a remote repo on your local repo
+
+*	git fork
+		- creating a copy of an existing repo on a remote hosting platform [GitHub]
