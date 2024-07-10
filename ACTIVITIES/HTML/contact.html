@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Fundamentals</title>
+</head>
+
+<body>
+    <!-- Body contains the content of the webpage -->
+    <header>
+        <h1>Add Contact</h1>
+    </header>
+<hr>
+    <section id="forms">
+        <form action="submit_page.php" method="post">
+            <h4>Input here</h4>
+            <!-- the for="" in the label MUST have the same value in id="" in the input so that if your click the label the focus will go to the textbox or input-->
+            <label for="name">Name:</label>
+            <!-- just type inp to see all the type of inputs in the suggestions -->
+            <input type="text" name="name" id="name" required />
+            <br>
+            <label for="email">Email:</label>
+            <!-- just type inp to see all the type of inputs in the suggestions -->
+            <input type="email" name="name" id="email">
+            <br>
+            <label for="contact">Contact Number:</label>
+            <!-- just type inp to see all the type of inputs in the suggestions -->
+            <input type="number" name="name" id="contact">
+            <br>
+            <label for="birthdate">Birthdate:</label>
+            <!-- just type inp to see all the type of inputs in the suggestions -->
+            <input type="date" name="name" id="birthdate">
+            <br />
+            <label for="color">Favorite Color:</label>
+            <!-- just type inp to see all the type of inputs in the suggestions -->
+            <input type="color" name="name" id="color">
+            <br />
+            <label for="hobbies">Hobbies:</label>
+            <textarea type="hobbies" name="hobbies" rows="4" cols="30" required></textarea>
+            <br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <!-- Radio buttons and checkboxes -->
+            <!-- name should be the same if you want to group the radiobuttons the same with the checkboxes
+         naming for relationships-->
+            <br>
+            <input type="radio" name="options" id="option1">
+            <label for="option1">Opetion1</label>
+            <input type="radio" name="options" id="option1">
+            <label for="option1">Opetion2</label>
+            <br><br>
+
+            <!-- <input type="checkbox" name="check" id="check1" value="check1">
+            <label for="check1">Check1</label>
+            <input type="checkbox" name="check" id="check1" value="check1">
+            <label for="check1">Check2</label> -->
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <hr />
+
+    <!-- a element to tag link -->
+    <section id="links">
+        <h3>Social Media:</h3>
+        <ul>
+            <!-- target="_blank to open Google to a new tab" -->
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>            
+        </ul>
+    </section>
+    <!-- To user prettier right click and select "Format Document with..."-->
+    <!-- attributes(like href, name, id, target) should be small letters for a good practice -->
+    <!--<hr/> a self ending tag  -->
+    <hr />
+
+    <img src="./bird.jpg" alt="colorful bird" height="300px">
+
+    <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001/900" alt="colorful bird" height="300px">
+    <!-- to modify the image size just modify one either height or width so that the proportion will not be distroy-->
+    <hr />
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+
+</html>
