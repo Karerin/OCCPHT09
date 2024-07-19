@@ -1,0 +1,67 @@
+
+/* Using gap */
+.gridContainer{
+    display: grid;
+    /* gap: 10px;
+    gap: 0px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /* 5 times , then the unit you want to use */
+    grid-template-columns: repeat(5, 1fr); 
+}
+/* commented for the meantime
+.gridItem7{
+   grid-area:2/2/4/6 
+} */
+
+/* Media queries */
+/* 
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/
+
+/* Media Query for Large Screens */
+@media  screen and (min-width: 769px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem7{
+        grid-area: 1/1/2/5;
+
+    }
+}
+/* Media Query for Tablets Screens */
+@media  screen and (min-width: 481px) and (max-width: 768px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem25{
+        display: none;
+    }
+}
+
+/* Media Query for Mobile Screens */
+/* 480px because the min-width for the tablet is 481px */
+@media  screen and (min-width: 480px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    .gridItem23{
+        display: none;
+    }
+    .gridItem24{
+        display: none;
+    }
+    .gridItem25{
+        display: none;
+    }
+}

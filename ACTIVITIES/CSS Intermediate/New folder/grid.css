@@ -1,0 +1,43 @@
+/*how to activate grid on your container*/
+/* Using px */
+.gridContainer{
+  display: grid;
+  /* column 1 , column 2, column 3 */
+  grid-template-columns: 400px 300px 300px;
+  /* row1 , row2, row3 */
+  grid-template-rows: 200px 100px 100px;
+}
+/* Using Auto. Auto is better than using px easier and faster */
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+/* Percentage */
+.gridContainer{
+    display: grid;
+    grid-template-columns: 50% 25% 25%; /* but it must be always equal to 100%*/
+}
+/* Using fr -- fraction*/
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+}
+
+/* Using repeat */
+.gridContainer{
+    display: grid;
+    /* 5 times , then the unit you want to use */
+    grid-template-columns: repeat(7, 1fr); 
+}
+
+/* Using gap */
+.gridContainer{
+    display: grid;
+    /* gap: 10px;
+    gap: 0px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /* 5 times , then the unit you want to use */
+    grid-template-columns: repeat(5, 1fr); 
+}

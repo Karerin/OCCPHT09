@@ -1,0 +1,61 @@
+/* Naming conventions */
+/* Camel Casing: fontFamilySize
+Khebab Casing: font-family-size (usually used for css) */
+
+
+/* Google fonts 
+https://fonts.google.com/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+/* .font-family-size{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 20px;
+   } */
+    /* fall back fonts if hindi gumana ang first font */
+   .font-family-size{
+    font-family: "Playwrite HR", cursive,Verdana, Geneva, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+   }
+   .bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.center-align{
+    text-align: center;
+}
+.line-through{
+    text-decoration: line-through;
+}
+/* line height ng top at bottom */
+.line-height{
+    line-height: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    /* text overflow magiging ... siya if mahaba ang paragraph */
+    text-overflow: ellipsis;
+    width: 200px;
+    border: 1px solid;
+}
+/* space in every letter */
+.letter-spacing{
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    text-indent: 18px;
+}
+
+.text-shadow{
+    /* 
+    1st value: Horizontal
+    2nd value: Vertical
+    3rd value: Blur Effect
+    */
+    text-shadow: 5px 5px 2px green;
+    text-transform: lowercase;
+}
+/* if you want to color specific word use psuedo selector */

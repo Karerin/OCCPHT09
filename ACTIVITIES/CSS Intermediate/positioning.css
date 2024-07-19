@@ -1,0 +1,31 @@
+/* relative - the only affected is the class that is being configure */
+/* relative to the element's original position */
+.relative{
+    background-color: chocolate;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+/* if the position is relative it is positioned to its normal position while absolute is follows it's nearest ancestor */
+/* relative to its nearest container */
+.absolute{
+    background-color: cadetblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/* A fixed position element is positioned relative to the viewport, or the browser window itself. The viewport doesn’t change when the window is scrolled, so a fixed positioned element will stay right where it is when the page is scrolled. */
+/* fixed on our viewport */
+.fixed{
+    background-color: burlywood;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.sticky{
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}

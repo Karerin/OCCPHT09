@@ -1,0 +1,61 @@
+/* flexbox commonly use on card */
+/* to make the application responsive to device of the user */
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* main axis the x axis cross axis the y axis */
+.flexContainer{
+    /* start/center/end */ 
+    justify-content: end;
+    align-items: end;
+}
+/* for better observation */
+.flexContainer {
+    justify-content: end;
+    align-items: start;
+}
+
+/* Flex grow */  /* 1/3 fractional value of how the element will grow*/
+.flexItem1{
+    flex-grow: 1; /* 1/3 */
+}
+.flexItem2{
+    flex-grow: 1;  /* 1/3 */
+}
+.flexItem3{
+    flex-grow: 1;  /* 1/3 */
+}
+/* to better observe */
+.flexItem1{
+    flex-grow: 1; /* 1/4 */
+}
+.flexItem2{
+    flex-grow: 2;  /* 1/2 */
+}
+.flexItem3{
+    flex-grow: 1;  /* 1/4 */
+}
+
+/* flex shrink */
+.flexItem1{
+    flex-shrink: 1; /* 1/3 */
+}
+.flexItem2{
+    flex-shrink: 1;  /* 1/3 */
+}
+.flexItem3{
+    flex-shrink: 1;  /* 1/3 */
+}
+/* seamless design even if the viewport becomes of the mobile */
+.flexItem1{
+    flex-shrink: 1; /* 2/5 */
+}
+.flexItem2{
+    flex-shrink: 0;  /* 1/5 */
+}
+.flexItem3{
+    flex-shrink: 1;  /* 2/5 */
+}

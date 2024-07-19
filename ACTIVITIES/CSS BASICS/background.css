@@ -1,0 +1,28 @@
+body{
+    /* background-image: url(tiger.jpg); */
+    /* background-repeat: repeat; */
+    background-color: palevioletred;
+}
+.color-example{
+    /* 
+    Fourth value is the opacity
+    */
+    color: rgba(0, 0, 255, 1);
+}
+.background-example{
+    background-color: aqua;
+}
+.background-image{
+    background-image: url("paradise.jpeg");
+    height: 300px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+.image-sizing-example{
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}

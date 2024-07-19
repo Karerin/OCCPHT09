@@ -1,0 +1,63 @@
+/* Element Selector */
+span{
+    color: blue;
+}
+/* Class Selector . if class there is a dot in the beginning*/
+.class-name{
+    color: aqua;
+}
+/* ID Selector # in the beginning of the id selector*/
+#id-name{
+    color: orange;
+}
+/* Universal Selector * in the beginning of the id selector applied if the htmls
+ somethings don't have a css config Universal selector are usually located at the top for best practices*/
+*{
+    color:pink;
+    font-size: 25px;
+}
+/* Attribute Selector href only if all with the href*/
+a[href]{
+  color: purple;
+}
+a[href="www.sample.com"]{
+    color: green;
+  }
+  /* Grouping Selector */
+  h1, .parag, h2{
+    color: brown;
+  }
+  /* Descendant Selectors parent child but you only want 
+  color the child inside the enclose/ parang i-file path siya*/
+  .ancestor h3{
+    color: tomato;
+  }
+  .ancestor p {
+    color: yellow;
+  }
+  .ancestor p[class="second"]{
+    color: #39ff14;
+  }
+/* Pseudo Selectors */
+button:hover {
+    background-color: black;
+    color: white;
+}
+a[href="https://www.example.com"]{
+  color: fuchsia;   
+}
+/* Pseudo Elements */
+#pseudo-element::before{
+   content:"This is a paragraph before h3. "; 
+   color: black;
+}
+/* palatandaan if sumagot na ang responder  */
+#pseudo-element::after{
+    content:"This is a paragraph after h3. "; 
+    color:rgb(55, 0, 35);
+ }
+ #pseudo-element::first-letter {
+    color:#39FF14; 
+    font-size: 40px;
+}
+

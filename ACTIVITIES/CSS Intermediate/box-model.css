@@ -1,0 +1,46 @@
+.box1{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.box2{
+    /* top-bottom and left-right */
+    padding: 20px 40px;
+    /* same all sizes */
+    padding: 50px;
+    padding: 5px 10px 20px 30px;
+    /* CSS run from top to bottom  */
+}
+.box3{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.box4{
+    /* top-bottom and left-right */
+    margin: 20px 40px;
+    /* same all sizes */
+    margin: 50px;
+    /* top - right - bottom - left */
+    margin: 5px 10px 20px 30px;
+    /* CSS run from top to bottom  */
+}
+.mix-borders{
+    border-style: dotted dashed solid double;
+    border-width: 3px;
+    border-color: brown;
+    /* other way if you all to be the same */
+    border: solid red 1px;
+    border: solid rgb(red, green, blue) 1px;
+}
+/* How to create a circle */
+.circle-container{
+    background-color: blueviolet;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
